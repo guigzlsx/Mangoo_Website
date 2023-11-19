@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -133,8 +129,12 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 #header {
-  background-image: url("../img/Header background.png");
+  background-image: url("../../img/Header_background.png");
   background-size: cover;
 }
 
@@ -146,14 +146,62 @@ table {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: start;
 }
+.container .grid_1 .logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  padding-left: 15px;
+}
+.container .grid_1 .logo img {
+  width: 80%;
+  height: 80%;
+  margin-right: 10px;
+}
+.container .grid_1 .titre {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.container .grid_1 .titre .mongoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 250px;
+  font-size: 126px;
+}
+.container .grid_1 .titre .frais {
+  grid-column: 2/4;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+  margin-left: 260px;
+  font-size: 3rem;
+  transform: rotate(-10deg);
+}
 .container .navbar {
   margin-right: 0px;
-  grid-column: 2/4;
+  grid-column: 2/5;
   grid-row: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+  margin-left: 40px;
+  align-items: flex-end;
+}
+.container .navbar button {
+  background-color: #ffffff;
+  color: #b2d234;
+  border-radius: 6px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .container .navbar a {
   margin: 0 15px;
@@ -161,6 +209,257 @@ table {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 600;
+}
+.container .navbar a:hover {
+  text-decoration: underline;
+}
+.container .reseau {
+  grid-column: 4;
+  grid-row: 4;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.grid_2 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid_2 .card_1 {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+.grid_2 .card_1 h2 {
+  font-size: 2rem;
+  color: #b2d234;
+  padding-bottom: 30px;
+}
+.grid_2 .card_1 p {
+  font-size: 1.2rem;
+  color: #606060;
+}
+.grid_2 .card_1 button {
+  color: #ffffff;
+  background-color: #b2d234;
+  border-radius: 6px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+img {
+  margin-top: 40px;
+  width: 90%;
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 1/4;
+}
+
+.grid_2 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid_2 .card_1 {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+.grid_2 .card_1 h2 {
+  font-size: 2rem;
+  color: #b2d234;
+  padding-bottom: 30px;
+}
+.grid_2 .card_1 p {
+  font-size: 1.2rem;
+  color: #606060;
+}
+.grid_2 .card_1 button {
+  color: #ffffff;
+  background-color: #b2d234;
+  border-radius: 6px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+img {
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  grid-column: 3/5;
+  grid-row: 1/4;
+}
+
+.grid_3 {
+  background-image: url("../../img/pate.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.grid_3 .card_2 {
+  margin-top: 10px;
+  grid-column: 3;
+  grid-row: 1/3;
+  background-color: rgba(178, 210, 52, 0.8);
+  flex-direction: column;
+}
+.grid_3 .card_2 h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.grid_3 .card_2 p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+.grid_3 .card_2 button {
+  background-color: #ffffff;
+  color: #b2d234;
+  border-radius: 6px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 180px;
+}
+
+.page_4 h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #b2d234;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.page_4 p {
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 30px;
+}
+.page_4 .grid_4 {
+  width: 90%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.page_4 .grid_4 .card_3 {
+  padding-top: 15px;
+  grid-column: 2;
+}
+.page_4 .grid_4 .card_3 h2 {
+  font-size: 2rem;
+}
+.page_4 .grid_4 .card_3 .prix {
+  font-size: 1.2rem;
+  color: #b2d234;
+}
+.page_4 .grid_4 .force {
+  padding-top: 110px;
+  grid-column: 4;
+}
+.page_4 .grid_4 .force .v {
+  text-align: center;
+  color: #b2d234;
+  transform: rotate(-10deg);
+  font-size: 2rem;
+}
+.page_4 .grid_4 .force .b {
+  text-align: center;
+  color: #60a0d8;
+  transform: rotate(-10deg);
+  font-size: 2rem;
+  padding-bottom: 100px;
+}
+.page_4 .grid_4 .force button {
+  margin-left: 230px;
+  color: #ffffff;
+  background-color: #b2d234;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.grid_5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/prepa.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.grid_5 .vert {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(178, 210, 52, 0.8);
+  margin-right: 30px;
+}
+.grid_5 .vert h2 {
+  color: white;
+}
+.grid_5 .bleu {
+  margin-left: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(96, 160, 216, 0.8);
+}
+.grid_5 .bleu h2 {
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #b2d234;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.footer p {
+  grid-column: 2/4;
+  grid-row: 1;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+.footer img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 30%;
+  height: 50%;
+  margin-left: 15px;
+}
+.footer .command {
+  font-size: 1.2rem;
+}
+.footer .info {
+  font-size: 1.2rem;
+}
+.footer .retr {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
