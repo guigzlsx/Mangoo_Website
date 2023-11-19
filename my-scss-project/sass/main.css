@@ -462,4 +462,100 @@ img {
   font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+  .container .grid_1 {
+    grid-template-columns: 1fr;
+  }
+  .container .grid_1 .logo {
+    padding-left: 5px;
+    opacity: 0;
+  }
+  .container .grid_1 .logo img {
+    width: 60%;
+    height: 60%;
+  }
+  .container .grid_1 .titre .mongoo {
+    font-size: 63px;
+    margin-left: 1px;
+  }
+  .container .grid_1 .titre .frais {
+    font-size: 1.5rem;
+    margin-left: 130px;
+  }
+  .container .navbar {
+    grid-column: 1;
+  }
+  .container .navbar a {
+    font-size: 1rem;
+  }
+  .grid_2 {
+    grid-template-columns: 1fr;
+  }
+  .grid_2 .card_1 {
+    grid-column: 1;
+  }
+  .grid_2 .card_1 h2 {
+    font-size: 1rem;
+  }
+  .grid_2 .card_1 p {
+    font-size: 0.6rem;
+  }
+  .grid_3 {
+    grid-template-columns: 1fr;
+  }
+  .grid_3 .card_2 {
+    grid-column: 1;
+  }
+  .grid_3 .card_2 h2 {
+    font-size: 1rem;
+  }
+  .grid_3 .card_2 p {
+    font-size: 0.6rem;
+  }
+  .page_4 .grid_4 {
+    grid-template-columns: 1fr;
+  }
+  .page_4 .grid_4 .card_3 {
+    grid-column: 1;
+  }
+  .page_4 .grid_4 .card_3 h2 {
+    font-size: 1rem;
+  }
+  .page_4 .grid_4 .force {
+    grid-column: 1;
+  }
+  .page_4 .grid_4 .force .v {
+    font-size: 1rem;
+  }
+  .page_4 .grid_4 .force .b {
+    font-size: 1rem;
+  }
+  .grid_5 .vert h2 {
+    font-size: 1rem;
+  }
+  .grid_5 .bleu h2 {
+    font-size: 1rem;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer p {
+    grid-column: 1;
+    font-size: 0.6rem;
+  }
+  .footer img {
+    width: 20%;
+    height: 30%;
+  }
+  .footer .command {
+    font-size: 0.6rem;
+  }
+  .footer .info {
+    font-size: 0.6rem;
+  }
+  .footer .retr {
+    font-size: 0.6rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
